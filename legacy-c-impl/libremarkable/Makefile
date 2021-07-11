@@ -1,14 +1,5 @@
-CC = arm-linux-gnueabihf-gcc
-AR = arm-linux-gnueabihf-ar
 CFLAGS += -fPIC -g
-CFLAGS += -I$(FREETYPE_PATH)/usr/local/include
-CFLAGS += -I$(FREETYPE_PATH)/usr/local/include/freetype2
 CFLAGS += -std=c99
-LDFLAGS = $(FREETYPE_PATH)/usr/local/lib/libfreetype.a
-
-CONFIG?=config.mk
-
-include $(CONFIG)
 
 SOURCES = fb.c refresh.c serde.c bitmap.c freetype.c
 OBJECTS = $(SOURCES:.c=.o)
