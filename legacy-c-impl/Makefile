@@ -1,4 +1,4 @@
-CFLAGS ?= -fPIC -g -static
+CFLAGS ?= -fPIC -g
 
 all: poc spy.so evtest
 
